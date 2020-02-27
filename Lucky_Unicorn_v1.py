@@ -1,17 +1,9 @@
-# Lucky Unicorn Step 2
-# Generate a random token
-
-# To do
-# Set up starting amount
-# Choose 100 tokens (ie: play 100 rounds and...
-#   count # of unicorns and multiply by 5
-#   count # of horses / zebra and multiply by 0.5
-#   count # of donkeys
-#   work out total won / lost
+# Lucky Unicorn
 
 import random
 
-# Ask for money amount
+# Check that number is valid
+
 def intcheck(question, low, high):
     valid = False
     while not valid:
@@ -74,7 +66,7 @@ while keep_going == "":
     else:
         keep_going = input("Press <enter> to play again or any key to quit")
 
-# Money Calculations
+# End screen
 winnings = total
 
 print()
