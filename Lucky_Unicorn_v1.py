@@ -7,10 +7,10 @@ import random
 def intcheck(question, low, high):
     valid = False
     while not valid:
-            error = "Please enter an integer between {} and {}".format(low, high)
+            error = "Please enter an integer between {} and {} ".format(low, high)
 
             try:
-                response = int(input("Enter an integer between {} and {}: ".format(low, high)))
+                response = int(input("How much money would you like to play with? ".format(low, high)))
 
                 if low <= response <= high:
                     return response
@@ -24,7 +24,7 @@ def intcheck(question, low, high):
 
 # main routine goes here
 
-total = intcheck("Enter a number between 1 and 15:", 1, 20)
+total = intcheck("How much money would you like to play with?: ", 1, 10)
 
 how_much = total
 tokens = ["horse", "horse", "horse",
